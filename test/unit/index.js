@@ -90,6 +90,9 @@ describe('mongoose-mocks', function () {
       it('adds a stub for path()', function() {
         expect(Model.path).to.be.a('function');
       });
+      it('adds a stub for on()', function() {
+        expect(Model.on).to.be.a('function');
+      });
       describe('path()', function () {
         it('returns an object with a stub to validate', function () {
           expect(Model.path()).to.be.an('object');

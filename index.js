@@ -79,6 +79,7 @@ var Schema = function () {
   Model.set = sinon.stub();
   Model.update = sinon.stub();
   Model.where = sinon.stub();
+  Model.on = sinon.stub();
 
   mongoose.emit('model', Model);
   return Model;
