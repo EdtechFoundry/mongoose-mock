@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "mongoose-mock",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A replacement for mongoose in tests returning models with sinon stubs for methods",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/JohanObrink/mongoose-mock",
   "dependencies": {
     "bson": "^1.0.4",
-    "sinon": "~1.8.1"
+    "sinon": "^1.17.7"
   },
   "devDependencies": {
     "chai": "~1.9.0",
