@@ -36,6 +36,9 @@ var Schema = function () {
   Model.static = sinon.stub();
   Model.method = sinon.stub();
   Model.pre = sinon.stub();
+  Model.collection = {
+    name:
+  };
 
   Model.path = function() {
     return {
@@ -100,6 +103,9 @@ function createModelFromSchema(name, Type) {
         Type.prototype[key] = Type.methods[key];
       });
     }
+    Type.collection = {
+      name: mongoose.pluralize(name),
+    };
     models_[name] = Type;
   } 
   return models_[name];
